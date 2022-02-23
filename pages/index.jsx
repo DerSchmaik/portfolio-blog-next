@@ -6,12 +6,7 @@ import { useState } from "react";
 import Contact from "../components/Contact";
 import Head from "next/head";
 
-export default function Home({ projects }) {
-
-  var showProjects = useBreakpointValue({ base: 3, sm: 4 });
-  const [ additionalProjects, setAdditionalProjects ] = useState(0);
-  var visibleProjects =  projects.slice(0, showProjects + additionalProjects);
-
+export default function Home() {
   return(<>
     <Head>
       <title>Schmaik | Home</title>
@@ -21,28 +16,7 @@ export default function Home({ projects }) {
       <Title />
 
       <Heading size='lg' marginTop="40px" as="h2"> Meine Projekte </Heading>
-      <Flex flexWrap='wrap' justifyContent='space-between'>
-        {visibleProjects.map(project => (
-          <ProjectCard key={project.name}
-            name={project.name}
-            imageURL={project.imageURL}
-            description={project.description}
-            tags={project.tags}
-            link={project.link}
-          />
-        ))}
-      </Flex>
-
-      <Center> 
-        {projects.length > (showProjects + additionalProjects) &&
-        
-        <Button marginTop="5" marginBottom="20px" variantColor="teal" onClick={() => {
-          setAdditionalProjects(additionalProjects + 2);
-        }}>
-            Mehr anzeigen...
-        </Button>}
-      </Center>
-
+      <Projects />
 
       <Heading as="h2" size="lg" marginTop="10" marginBottom="6">
         Ich bin vertraut mit...
@@ -58,8 +32,7 @@ export default function Home({ projects }) {
   </>)
 }
 
-export async function getStaticProps() {
-
+function Projects() {
   const projects = [
     {
       name: "Fly or Die - A Funny Flapping Game",
@@ -172,9 +145,34 @@ export async function getStaticProps() {
     }
   ]
 
-  return {
-    props: {
-      projects
-    }
-  }
+  var showProjects = useBreakpointValue({ base: 3, sm: 4 });
+  const [ additionalProjects, setAdditionalProjects ] = useState(0);
+  var visibleProjects =  projects.slice(0, (showProjects + additionalProjects));
+
+  // render all projects on server for SEO
+  if(visibleProjects.length == 0) visibleProjects = projects
+
+  return (<>
+    <Flex flexWrap='wrap' justifyContent='space-between'>
+      {visibleProjects.map(project => (
+        <ProjectCard key={project.name}
+          name={project.name}
+          imageURL={project.imageURL}
+          description={project.description}
+          tags={project.tags}
+          link={project.link}
+        />
+      ))}
+    </Flex>
+
+    <Center> 
+      {projects.length > (showProjects + additionalProjects) &&
+      
+      <Button marginTop="5" marginBottom="20px" variantColor="teal" onClick={() => {
+        setAdditionalProjects(additionalProjects + 2);
+      }}>
+          Mehr anzeigen...
+      </Button>}
+    </Center>
+  </>)
 }
