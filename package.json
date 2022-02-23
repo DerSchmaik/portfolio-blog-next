@@ -13,6 +13,7 @@
     "@chakra-ui/react": "^1.8.5",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
+    "@next/bundle-analyzer": "^12.1.0",
     "framer-motion": "^6.2.7",
     "next": "12.1.0",
     "react": "17.0.2",
