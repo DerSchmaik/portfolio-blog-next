@@ -158,6 +158,7 @@ export async function getStaticProps() {
     {
       name: "Vertretungsplan Scraper",
       description: "Vertretungsplan Scraper ist ein Python Script, welches den Vertretungsplan von einer Vertretungsplan.app Schule täglich scraped und als JSON für weitere Auswertung bereit stellt.",
+      imageURL: "/thumbnails/vertretungsplan.png",
       tags: [
         "Python",
         "Web Scraping",
@@ -166,6 +167,7 @@ export async function getStaticProps() {
     },
     {
       name: "Discord Bot",
+      imageURL: "/thumbnails/discordbot.png",
       description: "Discord Bot ist ein Discord Bot mit vielen Funktionen. Während dem Homeschooling konnte man Videokonferenzen bei ihm eintragen an welcher er einen dann erinnerte.",
       tags: [
         "JavaScript",
