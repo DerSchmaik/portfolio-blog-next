@@ -63,7 +63,7 @@ export default function Home({ projects }) {
 }
 
 export async function getStaticProps() {
-  const r = await fetch('http://localhost:3000/projects.json')
+  const r = await fetch('https://raw.githubusercontent.com/DerSchmaik/portfolio-blog-next/main/projects.json')
   const projects = await r.json()
   return {
     props: {
