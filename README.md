@@ -6,8 +6,12 @@
 - [x] Bilder zu Projekten
 - [x] Metatags
 - [x] Png optimize
-- [ ] preload images in background
+- [x] Deploy to schmaik.net
 - [ ] Date of Project
 - [ ] Easter Eggs
+
+
+## nächster schritt 
+- [ ] Blog
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
