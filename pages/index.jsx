@@ -64,7 +64,7 @@ export async function getStaticProps() {
     {
       name: "Fly or Die - A Funny Flapping Game",
       imageURL: `/thumbnails/flyordie.png`,
-      description: "Fly or Die ist ein Flappy Bird clon, welcher um einige kleinere Features erweitert wurde. Meinen fortschritt habe ich auf TikTok geteilt und viele Ideen aus der Communtiy umgesetzt.",
+      description: "Fly or Die ist ein Flappy Bird Clon, welcher um einige kleinere Features erweitert wurde. Meinen Fortschritt habe ich auf TikTok geteilt und viele Ideen aus der Communtiy umgesetzt.",
       link: "https://play.google.com/store/apps/details?id=com.Schmaik.FlyorDie",
       tags: [
         "Unity",
@@ -75,7 +75,7 @@ export async function getStaticProps() {
     {
       name: "links.schmaik.net",
       imageURL: "/thumbnails/links.png",
-      description: "links.schmaik.net ist eine Webseite, die eine Liste von Links zu Websites mit einem kleinen Text zur Verfügung stellt. Es dient als eine Selbstprogrammierte linktr.ee alternative.",
+      description: "links.schmaik.net ist eine kleine Webseite, die eine Liste von Links anderen Websites zeigt. Es dient als eine Selbstprogrammierte linktr.ee alternative.",
       link: "https://github.com/DerSchmaik/links.schmaik.net",
       tags: [
         "Vue.js",
@@ -86,7 +86,7 @@ export async function getStaticProps() {
     {
       name: "Apple Music to Spotify playlist",
       imageURL: "/thumbnails/AppleToSpotify.png",
-      description: "Apple Music to Spotify Playlist ist ein Python Script, welches Playlists von Applemusic auf Spotify üebrträgt.",
+      description: "Apple Music to Spotify Playlist ist ein Python Script, welches Playlists von Applemusic auf Spotify überträgt.",
       link: "https://github.com/DerSchmaik/applemusic_playlist_to_spotify",
       tags: [
         "Python",

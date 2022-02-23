@@ -6,6 +6,7 @@
 - [x] Bilder zu Projekten
 - [x] Metatags
 - [x] Png optimize
+- [ ] preload images in background
 - [ ] Colors
 - [ ] Date of Project
 - [ ] Animationen / Effekte
