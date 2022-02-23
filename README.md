@@ -2,7 +2,8 @@
 - [x] Contact Section
 - [x] Texte zu Projekten
 - [x] Alle Anzeigen
-- [x] Bilder zu Projekten
+- [x] Icon Tap fix
+- [ ] Bilder zu Projekten
 - [ ] Metatags
 - [ ] Colors
 - [ ] Date of Project

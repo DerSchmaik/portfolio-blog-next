@@ -6,14 +6,15 @@ import SocialButton from "./SocialButton"
  
 export default function Header() {
   const btnColor = useColorModeValue('gray.700', 'white')
-  const textColor = useColorModeValue('white', 'gray.700')
-  const bgColor = useColorModeValue('white', 'gray.800')
+  const btnColorHover = useColorModeValue('black', 'gray.100')
+  const btnTextColor = useColorModeValue('white', 'gray.700')
+  const headerBGColor = useColorModeValue('white', 'gray.800')
 
   return (
-    <Box position="fixed" bgColor={bgColor} width="100%" marginTop="-130px" p={4} zIndex="100">
+    <Box position="fixed" bgColor={headerBGColor} width="100%" marginTop="-130px" p={4} zIndex="100">
       <Flex>
         <Link href="/">
-          <Button bg={ btnColor } color={textColor} size='lg'>
+          <Button bg={ btnColor } color={btnTextColor} size='lg' _hover={{ bg: {btnColorHover} }}>
               Schmaik
           </Button>
         </Link>
