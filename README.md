@@ -5,7 +5,7 @@
 - [x] Icon Tap fix
 - [x] Bilder zu Projekten
 - [x] Metatags
-- [ ] Png optimize
+- [x] Png optimize
 - [ ] Colors
 - [ ] Date of Project
 - [ ] Animationen / Effekte
