@@ -63,7 +63,7 @@ export default function Home({ projects }) {
   </>)
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
 
   const projects = [
     {
