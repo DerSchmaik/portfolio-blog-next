@@ -7,8 +7,7 @@
 - [x] Metatags
 - [x] Png optimize
 - [x] Deploy to schmaik.net
-- [ ] Date of Project
-- [ ] Easter Eggs
+- [x] Date of Project
 
 
 ## nächster schritt 
