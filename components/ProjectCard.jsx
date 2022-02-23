@@ -2,7 +2,7 @@ import { Box, Flex, Tag, Text, useColorModeValue, Image } from "@chakra-ui/react
 import Link from "next/link";
 
 
-export default function Project({ name, imageURL, description, tags}) {
+export default function Project({ name, imageURL, description, tags, link}) {
   const description_color = useColorModeValue('gray.600', 'gray.400')
 
   return (
@@ -32,15 +32,13 @@ export default function Project({ name, imageURL, description, tags}) {
         <Box as='span' color={description_color} fontSize='sm'>
           {description}
         </Box>
-        <Link href="/link">
+        {link && <a href={link} target="_blank" rel="noopener noreferrer">
           <Box>
-            <a>
-              <Text as='span' color='teal.500' fontSize='sm'>
-                Mehr sehen...
-              </Text>
-            </a>
+            <Text as='span' color='teal.500' fontSize='sm'>
+              Mehr sehen...
+            </Text>
           </Box>
-        </Link>
+        </a>}
       </Box>
     </Box>
   )

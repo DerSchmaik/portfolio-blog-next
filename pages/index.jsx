@@ -33,6 +33,7 @@ export default function Home({ projects }) {
             imageURL={project.imageURL}
             description={project.description}
             tags={project.tags}
+            link={project.link}
           />
         ))}
       </Flex>
@@ -63,8 +64,118 @@ export default function Home({ projects }) {
 }
 
 export async function getStaticProps() {
-  const r = await fetch('https://raw.githubusercontent.com/DerSchmaik/portfolio-blog-next/main/projects.json')
-  const projects = await r.json()
+  const projects = [
+    {
+      name: "Fly or Die - A Funny Flapping Game",
+      imageURL: "https://i.ytimg.com/vi/5NqitWbBim8/maxresdefault.jpg",
+      description: "Fly or Die ist ein Flappy Bird clon, welcher um einige kleinere Features erweitert wurde. Meinen fortschritt habe ich auf TikTok geteilt und viele Ideen aus der Communtiy umgesetzt.",
+      link: "https://play.google.com/store/apps/details?id=com.Schmaik.FlyorDie",
+      tags: [
+        "Unity",
+        "C#",
+        "TikTok"
+      ]
+    },
+    {
+      name: "links.schmaik.net",
+      imageURL: "https://i.ytimg.com/vi/5NqitWbBim8/maxresdefault.jpg",
+      description: "links.schmaik.net ist eine Webseite, die eine Liste von Links zu Websites mit einem kleinen Text zur Verfügung stellt. Es dient als eine Selbstprogrammierte linktr.ee alternative.",
+      link: "https://github.com/DerSchmaik/links.schmaik.net",
+      tags: [
+        "Vue.js",
+        "JavaScript",
+        "CSS"
+      ]
+    },
+    {
+      name: "Apple Music to Spotify playlist",
+      imageURL: "https://i.ytimg.com/vi/5NqitWbBim8/maxresdefault.jpg",
+      description: "Apple Music to Spotify Playlist ist ein Python Script, welches Playlists von Applemusic auf Spotify üebrträgt.",
+      link: "https://github.com/DerSchmaik/applemusic_playlist_to_spotify",
+      tags: [
+        "Python",
+        "Web Scraping",
+        "REST API"
+      ]
+    },
+    {
+      name: "Festgruss.de",
+      imageURL: "https://i.ytimg.com/vi/5NqitWbBim8/maxresdefault.jpg",
+      description: "Festgruss.de ist eine kleine Website, welche es einem ermöglicht digitale Weihnachtsgrüße an Freunde zu senden. Es ist die erste richtige Website, die ich entwickelt habe.",
+      link: "https://festgruss.de/weihnachten/create",
+      tags: [
+        "Vue.js",
+        "JavaScript",
+        "CSS",
+        "Netlify"
+      ]
+    },
+    {
+      name: "IServ Darkmode",
+      imageURL: "https://user-images.githubusercontent.com/47828495/146412379-63a34780-e53d-4e2a-b148-bcbdef506ef7.png",
+      description: "IServ Darkmode ist ein Projekt, das die Darkmode-Funktionalität von Iserv erweitert. Dieses Projekt wurde von mir selbst entwickelt und ist nicht von IServ gepflegt.",
+      link: "https://github.com/DerSchmaik/Iserv-Darkmode",
+      tags: [
+        "Chrome Extensions",
+        "JavaScript",
+        "CSS"
+      ]
+    },
+    {
+      name: "OPUS Greennet python Wrapper",
+      imageURL: "https://i.ytimg.com/vi/5NqitWbBim8/maxresdefault.jpg",
+      description: "OPUS Greennet python Wrapper ist eine python Liabary, welche einfachen umgang mit OPUS Greennet smarthome Geräten in Python ermöglicht.",
+      link: "https://github.com/DerSchmaik/opus_greennnet_wrapper",
+      tags: [
+        "Python",
+        "REST API",
+        "pypi"
+      ]
+    },
+    {
+      name: "Better Big Blue Button",
+      imageURL: "https://i.ytimg.com/vi/5NqitWbBim8/maxresdefault.jpg",
+      description: "Better Big Blue Button ist ein Projekt, das die Funktionalität von Big Blue Button erweitert. Dieses Projekt wurde von mir selbst entwickelt und ist nicht von Big Blue Button gepflegt.",
+      link: "https://github.com/DerSchmaik/better-bbb",
+      tags: [
+        "Chrome Extensions",
+        "Vue.js",
+        "JavaScript",
+        "Reverse Engineering"
+      ]
+    },
+    {
+      name: "Freundschaftstest",
+      imageURL: "https://i.ytimg.com/vi/5NqitWbBim8/maxresdefault.jpg",
+      description: "Eine Website an welcher ich gerade Arbeite, auf welcher man Freundschaftstests über sich erstellen kann um diese dann an Freunde zu senden.",
+      tags: [
+        "Nuxt.js",
+        "Firebase",
+        "Vuetify"
+      ]
+    },
+    {
+      name: "Vertretungsplan Scraper",
+      imageURL: "https://i.ytimg.com/vi/5NqitWbBim8/maxresdefault.jpg",
+      description: "Vertretungsplan Scraper ist ein Python Script, welches den Vertretungsplan von einer Vertretungsplan.app Schule täglich scraped und als JSON für weitere Auswertung bereit stellt.",
+      tags: [
+        "Python",
+        "Web Scraping",
+        "Reverse Engineering"
+      ]
+    },
+    {
+      name: "Discord Bot",
+      imageURL: "https://i.ytimg.com/vi/5NqitWbBim8/maxresdefault.jpg",
+      description: "Discord Bot ist ein Discord Bot mit vielen Funktionen. Während dem Homeschooling konnte man Videokonferenzen bei ihm eintragen an welcher er einen dann erinnerte.",
+      tags: [
+        "JavaScript",
+        "Discord.js",
+        "Mongo DB"
+      ]
+    }
+  ]
+
   return {
     props: {
       projects
