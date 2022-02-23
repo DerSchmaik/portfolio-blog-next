@@ -18,7 +18,7 @@ export default function Header() {
           </Button>
         </Link>
         <Spacer />
-        <SocialButton name="Github" icon={ <AiFillGithub />} href="https://github.com/DerSchmaik" />
+        <SocialButton name="Github" icon={ <AiFillGithub />} href="https://github.com/DerSchmaik/portfolio-blog-next" />
         <ColorModeButton />
       </Flex>
     </Box>

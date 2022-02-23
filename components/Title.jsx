@@ -1,5 +1,6 @@
 import { Heading, HStack, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import { AiFillGithub } from "react-icons/ai";
 import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import SocialButton from "./SocialButton";
 
@@ -20,7 +21,7 @@ export default function Title() {
   });
 
   return (<>
-    <Heading size='3xl' marginTop="130px"  fontWeight='extrabold'> 
+    <Heading size='3xl' marginTop="130px" as="h1" fontWeight='extrabold'> 
       Hallo Welt!
     </Heading>
 

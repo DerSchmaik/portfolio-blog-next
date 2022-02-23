@@ -7,7 +7,7 @@ export default function Project({ name, imageURL, description, tags, link}) {
 
   return (
     <Box maxW={['100vh', '48%']} borderWidth='1px' borderRadius='lg' marginTop="20px" overflow="hidden">
-      {/* <Image src={imageURL} alt={name} /> */}
+      {imageURL && <Image src={imageURL} alt={name} height="200px" width="100%" fit="cover"/>}
       <Box p='6'>
         <Flex justifyContent='space-between' alignItems='center'>
         <Box>
@@ -22,7 +22,7 @@ export default function Project({ name, imageURL, description, tags, link}) {
         <Box
           mt='1'
           fontWeight='semibold'
-          as='h4'
+          as='h3'
           lineHeight='tight'
           isTruncated
         >

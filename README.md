@@ -2,9 +2,10 @@
 - [x] Contact Section
 - [x] Texte zu Projekten
 - [x] Alle Anzeigen
+- [x] Bilder zu Projekten
+- [ ] Metatags
 - [ ] Colors
 - [ ] Date of Project
-- [ ] Bilder zu Projekten
 - [ ] Animationen / Effekte
 - [ ] Easter Eggs
 
