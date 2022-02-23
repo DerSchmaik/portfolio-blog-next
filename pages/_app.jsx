@@ -22,7 +22,6 @@ function MyApp({ Component, pageProps }) {
       <meta name="keywords" content="schmaik, aiko, developer, full stack, teenager, projekte, fly or die"/>
       <meta name="image" content="https://i.imgur.com/EuBwo7m.jpg" />
       <meta name="robots" content="index, follow"/>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <meta name="language" content="German"/>
       <meta name="revisit-after" content="1 days"/>
 
