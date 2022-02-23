@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <Box width="100%" >
             <Center>
-                <Text fontSize="sm" color="gray.500" margin="15px" textAlign="center">
+                <Text fontSize="sm" color="gray.500" margin="20px" textAlign="center">
                     <p>Made with ❤️ by Aiko Zimmermann using <Link href="https://nextjs.org/">Next.js</Link> and <Link href="https://chakra-ui.com/">Chakra-UI</Link></p>
                 </Text>
             </Center>
