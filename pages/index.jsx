@@ -12,18 +12,13 @@ export default function Home({ projects }) {
   const [ additionalProjects, setAdditionalProjects ] = useState(0);
   var visibleProjects =  projects.slice(0, showProjects + additionalProjects);
 
-  const favicon = useColorModeValue('faviconL.ico', 'faviconD.ico');
-
   return(<>
     <Head>
       <title>Schmaik | Home</title>
-
-      <link rel="icon" href={`/${favicon}`} />
     </Head>
 
     <Container maxW='container.md'>
       <Title />
-
 
       <Heading size='lg' marginTop="40px" as="h2"> Meine Projekte </Heading>
       <Flex flexWrap='wrap' justifyContent='space-between'>

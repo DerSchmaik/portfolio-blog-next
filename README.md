@@ -3,8 +3,9 @@
 - [x] Texte zu Projekten
 - [x] Alle Anzeigen
 - [x] Icon Tap fix
-- [ ] Bilder zu Projekten
-- [ ] Metatags
+- [x] Bilder zu Projekten
+- [x] Metatags
+- [ ] Png optimize
 - [ ] Colors
 - [ ] Date of Project
 - [ ] Animationen / Effekte
