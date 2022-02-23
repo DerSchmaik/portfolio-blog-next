@@ -13,7 +13,7 @@ export default function Project({ name, imageURL, description, tags, link}) {
           <Flex justifyContent='space-between' alignItems='center'>
           <Box>
             {tags.map(tag => (
-              <Tag key={tag} variantColor="teal" marginRight="5px" size="sm">
+              <Tag key={tag} marginRight="5px" size="sm">
                 {tag}
               </Tag>
             ))}
