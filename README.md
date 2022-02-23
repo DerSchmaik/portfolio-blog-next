@@ -1,3 +1,14 @@
+- [x] Skills Section
+- [x] Contact Section
+- [ ] Strapi
+- [ ] Colors
+- [ ] Date of Project
+- [ ] Alle Anzeigen
+- [ ] Bilder zu Projekten
+- [ ] Texte zu Projekten
+- [ ] Animationen / Effekte
+- [ ] Easter Eggs
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
