@@ -28,7 +28,7 @@ export default function Projects() {
     <Center> 
       {projects.length > (showProjects + additionalProjects) &&
       
-      <Button marginTop="5" marginBottom="20px" onClick={() => {
+      <Button marginTop="5" marginBottom="20px" colorScheme="teal" onClick={() => {
         setAdditionalProjects(additionalProjects + 4);
       }}>
           Mehr anzeigen...
