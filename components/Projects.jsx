@@ -29,7 +29,7 @@ export default function Projects() {
       {projects.length > (showProjects + additionalProjects) &&
       
       <Button marginTop="5" marginBottom="20px" onClick={() => {
-        setAdditionalProjects(additionalProjects + 2);
+        setAdditionalProjects(additionalProjects + 4);
       }}>
           Mehr anzeigen...
       </Button>}
