@@ -8,9 +8,11 @@
 - [x] Png optimize
 - [x] Deploy to schmaik.net
 - [x] Date of Project
+- [x] Easteregg
 
 
 ## nächster schritt 
+- Add links page
 - Blog
 - Übersetzungen
 -> CMS (Strapi?)
