@@ -1,13 +1,13 @@
 import { Button, Container, VStack } from '@chakra-ui/react';
 import { AiFillAndroid } from 'react-icons/ai';
 import { FaDiscord } from 'react-icons/fa';
+import Metadata from '../components/Metadata';
 import Title from '../components/Title';
-
-
 
 export default function Links() {
   
   return(<>
+    <Metadata />
     <Container>
       <Title />
       <VStack spacing={3} marginTop="5">
