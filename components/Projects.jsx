@@ -166,18 +166,6 @@ function getProjectJson() {
       ]
     },
     {
-      name: "links.schmaik.net",
-      imageURL: "/thumbnails/links.webp",
-      description: "links.schmaik.net ist eine kleine Webseite, die eine Liste von Links anderen Websites zeigt. Es dient als eine Selbstprogrammierte linktr.ee alternative.",
-      link: "https://github.com/DerSchmaik/links.schmaik.net",
-      date: "2020",
-      tags: [ 
-        "Vue.js",
-        "JavaScript",
-        "Bootstrap"
-      ]
-    },
-    {
       name: "Freundschaftstest",
       description: "Eine Website an welcher ich gerade Arbeite, auf welcher man Freundschaftstests über sich erstellen kann um diese dann an Freunde zu senden.",
       imageURL: "/thumbnails/freundschaft.webp",
