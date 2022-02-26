@@ -8,7 +8,13 @@ import Metadata from "../components/Metadata";
 
 export default function Home({ projects }) {
   return(<>
-    <Metadata />    
+    <Metadata 
+      pageTitle="Home"
+      description="Hallo Welt! Ich bin Aiko aka. Schmaik und ein 15 Jähriger entwickler. Hier findest du alle meine Projekte und Infos."
+      keywords="schmaik, aiko, developer, full stack, teenager, projekte, fly or die"
+      imageURL="https://i.imgur.com/EuBwo7m.jpg"
+      shouldIndex={true}
+    />    
 
     <Container maxW='container.md'>
       <Title />
