@@ -27,7 +27,7 @@ export default function Contact () {
         {dcText}
       </Button>
       <a 
-        href="mailto:aiko.zimmermann@gmx.net" 
+        href="mailto:business.aikoz@gmail.com" 
         target="_blank" rel="noopener noreferrer" 
         width="100%"
       >
