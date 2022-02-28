@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme, Spacer, VStack } from '@chakra-ui/react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -12,9 +12,11 @@ const theme = extendTheme({
 function MyApp({ Component, pageProps }) {
   return (<>
     <ChakraProvider theme={theme}>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <VStack>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </VStack>
     </ChakraProvider>
   </>) 
 }

@@ -8,7 +8,7 @@ export default function Links() {
   
   return(<>
     <Metadata 
-      pageTitle="Links"
+      pageTitle="Schmaik | Links"
       description="Hallo Welt! Ich bin Aiko aka. Schmaik und ein 15 Jähriger entwickler. Hier findest du alle meine Links."
       keywords=""
       imageURL="https://i.imgur.com/EuBwo7m.jpg"

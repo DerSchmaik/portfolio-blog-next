@@ -7,7 +7,7 @@ import { SiChakraui, SiCsharp, SiExpress, SiFirebase, SiMongodb, SiNextdotjs, Si
 export default function Skills({ IconSize, spacingH, spacingV }) {
 
   return(<>
-    <Flex flexWrap='wrap'>
+    <Flex flexWrap='wrap' marginTop={6}>
       <Tooltip label="Javascript" placement='top-start' shouldWrapChildren closeOnClick={false}>
         <Icon as={DiJavascript1} w={IconSize} h={IconSize} marginRight={spacingH / 2} marginLeft={spacingH / 2}  marginBottom={spacingV}/>
       </Tooltip>

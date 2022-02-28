@@ -5,6 +5,10 @@ const nextConfig = {
     locales: ["de"],
     defaultLocale: "de",
   },
+  pageExtensions: ["jsx", "js", "mdx"],
+  images: {
+    domains: ['cdn.sanity.io'],
+  },
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -12,4 +16,4 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 
-module.exports = withBundleAnalyzer(nextConfig)
+module.exports = withBundleAnalyzer(nextConfig);

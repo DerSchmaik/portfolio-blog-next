@@ -15,7 +15,7 @@ export default function Header() {
   const headerBGColor = useColorModeValue('white', 'gray.800')
 
   return (
-    <Box position="fixed" bgColor={headerBGColor} width="100%" marginTop="-130px" p={4} zIndex="100">
+    <Box position="fixed" bgColor={headerBGColor} width="100%" p={4} zIndex="100">
       <Flex>
         <Link href="/">
           <Button bg={ btnColor } color={btnTextColor} size='lg' _hover={{ bg: {btnColorHover} }}>

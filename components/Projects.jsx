@@ -1,9 +1,8 @@
-import { Box, Button, Flex, Tag, Text, Center, useBreakpointValue, useColorModeValue, Image, HStack} from "@chakra-ui/react"
+import { Box, Button, Flex, Tag, Text, Center, useBreakpointValue, useColorModeValue, Image} from "@chakra-ui/react"
 import { useState } from "react";
 
 
 export default function Projects({ projects }) {
-
 
   var showProjects = useBreakpointValue({ base: 3, sm: 4 }); // show 3 projects on Mobile, 4 on Desktop
   const [ additionalProjects, setAdditionalProjects ] = useState(0); // count of additional projects to show

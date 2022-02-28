@@ -7,7 +7,7 @@ export default function Metadata({ pageTitle, description, keywords, imageURL, s
 
   return (
     <Head>
-      <title>Schmaik |{pageTitle}</title>
+      <title>{pageTitle}</title>
       <link rel="icon" href={`/${favicon}`} />
 
       <meta name="title" content="Schmaik.net" />

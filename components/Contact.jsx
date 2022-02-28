@@ -7,9 +7,8 @@ export default function Contact () {
 
   const [dcText, setDcText] = useState("Schmaik#3554")
 
-
   return (<>
-    <Grid templateColumns='repeat(2, 1fr)' gap={6}>
+    <Grid templateColumns='repeat(2, 1fr)' gap={6} marginTop={2}>
       <Button
         variant="outline"
         leftIcon={<FaDiscord />}
