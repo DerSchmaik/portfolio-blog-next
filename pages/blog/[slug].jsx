@@ -16,7 +16,7 @@ export default function articlePage({ post }) {
       shouldIndex={true}
     />
     <Container maxW='container.md'>
-      {post.mainImage && <Image src={post.mainImage} marginTop="100px" alt={post.title} width="100vw" />}
+      {post.mainImage ? <Image src={post.mainImage} marginTop="100px" alt={post.title} width="100vw" />: <Divider marginBottom="100px"/>}
       <Heading size='xl' as="h1" fontWeight='extrabold' marginTop="20px">
         {post.title}
       </Heading>

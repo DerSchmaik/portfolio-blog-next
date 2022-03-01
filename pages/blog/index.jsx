@@ -20,7 +20,7 @@ export default function Blog({ posts }) {
       </Heading>
 
       <Text marginTop={2}>
-        Hier Poste ich gelegendlich übe Projekte, Hobbies, etc.
+        Hier Poste ich gelegendlich Projekte, Tutorials, etc.
       </Text>
 
       <Blogposts posts={posts} showCount={1000}/>
@@ -31,7 +31,7 @@ export default function Blog({ posts }) {
 export async function getStaticProps() {
   const client = sanity
 
-  const blogpostQuery = `*[_type == "post"]{
+  const blogpostQuery = `*[_type == "post" && showOnHomepage == true]{
     title,
     "slug": slug.current,
     "mainImage": mainImage.asset->url,

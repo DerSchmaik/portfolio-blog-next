@@ -20,21 +20,17 @@ export default function Home({ projects, blogposts }) {
     <Container maxW='container.md'>
       <Title />
 
-      <Heading size='lg' marginTop="40px" as="h2" marginBottom="5px"> Meine Projekte </Heading>
-      <Divider />
-      <Projects projects={projects} />
-
-      <Heading as="h2" size="lg" marginTop="60px" marginBottom="6" marginBottom="5px">Ich bin vertraut mit...</Heading>
-      <Divider />
+      <Heading as="h2" size="lg" marginTop="60px" marginBottom="6" >Ich bin Vertraut mit... </Heading>
       <Skills spacingH="6" spacingV="6" IconSize={8}/>
 
-      <Heading size='lg' marginTop="50px" as="h2" marginBottom="5px"> Meine Blogposts </Heading>
-      <Divider />
+      <Heading size='lg' marginTop="40px" as="h2" > Projekte </Heading>
+      <Projects projects={projects} />
+
+      <Heading size='lg' marginTop="50px" as="h2" > Blog </Heading>
       <Blogposts posts={blogposts} showMore showCount={4}/>
         
       <Box marginBottom="10">
-        <Heading size='lg' marginTop="60px" marginBottom="5px"> Kontaktiere mich</Heading>
-        <Divider />
+        <Heading size='lg' marginTop="60px" > Kontaktiere mich</Heading>
         <Contact />
       </Box>
 
@@ -55,7 +51,7 @@ export async function getStaticProps() {
     "technologies": technologies[]->title
   }`
 
-  const blogpostQuery = `*[_type == "post"]{
+  const blogpostQuery = `*[_type == "post" && showOnHomepage == true]{
     title,
     "slug": slug.current,
     "mainImage": mainImage.asset->url,

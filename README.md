@@ -9,12 +9,11 @@
 - [x] Deploy to schmaik.net
 - [x] Date of Project
 - [x] Easteregg
+- [x] Sanity
+- [x] Add links page
+- [ ] Add links to Sanity
+- [x] Blog
+- [ ] Übersetzungen
 
-
-## nächster schritt 
-- Add links page
-- Blog
-- Übersetzungen
--> CMS (Strapi?)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
