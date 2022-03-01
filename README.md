@@ -13,6 +13,8 @@
 - [x] Add links page
 - [ ] Add links to Sanity
 - [x] Blog
+- [ ] Copy to Codeblock
+- [ ] Newsletter?
 - [ ] Übersetzungen
 
 
