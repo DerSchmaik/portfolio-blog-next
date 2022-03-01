@@ -6,8 +6,11 @@ import sanity from '../../lib/sanity'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { foundation, atomOneDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
-export default function articlePage({ post }) {
+export default function ArticlePage({ post }) {
   // Styling of the blog post
+  const style = useColorModeValue(foundation, atomOneDark)
+  const bg = useColorModeValue('#eee', '#282a34')
+
   const ptComponents = {
     marks: {
       link: ({children, value}) => {
@@ -20,9 +23,6 @@ export default function articlePage({ post }) {
     },
     types: {
       code: ({ value }) => {
-        const style = useColorModeValue(foundation, atomOneDark)
-        const bg = useColorModeValue('#eee', '#282a34')
-  
         if (!value || !value.code) { return null }
         return(
           <Box padding={3} bgColor={bg} borderRadius={6}>
